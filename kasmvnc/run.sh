@@ -163,11 +163,11 @@ if ! check_installed; then
   echo "Installing KASM version: ${KASM_VERSION}"
   case $distro in
     ubuntu | debian | kali)
-      bin_name="kasmvncserver_$${codename}_${KASM_VERSION}_$${arch}.deb"
+      bin_name="kasmvncserver_${codename}_${KASM_VERSION}_${arch}.deb"
       install_deb "$base_url/$bin_name"
       ;;
     oracle | fedora | opensuse)
-      bin_name="kasmvncserver_$${distro}_$${distro_version}_${KASM_VERSION}_$${arch}.rpm"
+      bin_name="kasmvncserver_${distro}_${distro_version}_${KASM_VERSION}_$${arch}.rpm"
       install_rpm "$base_url/$bin_name"
       ;;
     alpine)
