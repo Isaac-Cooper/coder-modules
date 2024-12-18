@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Exit on error, undefined variables, and pipe failures
-set -euo pipefail
+#set -euo pipefail - Doesn't Work.
 
 # Function to check if vncserver is already installed
 check_installed() {
