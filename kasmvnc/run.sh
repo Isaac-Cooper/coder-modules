@@ -224,7 +224,7 @@ echo -e "password\npassword\n" | vncpasswd -wo -u "$USER"
 sudo chmod +x /usr/lib/kasmvncserver/select-de.sh
 # Start the server
 printf "🚀 Starting KasmVNC server...\n"
-sudo vncserver -select-de "${DESKTOP_ENVIRONMENT}" -disableBasicAuth > /tmp/kasmvncserver.log 2>&1 &
+vncserver -select-de "xfce" -disableBasicAuth > /tmp/kasmvncserver.log 2>&1 &
 pid=$!
 
 # Wait for server to start
