@@ -221,7 +221,7 @@ EOF
 # The server is protected via the Coder session token / tunnel
 # and does not listen publicly
 echo -e "password\npassword\n" | vncpasswd -wo -u "$USER"
-
+sudo chmod +x /usr/lib/kasmvncserver/select-de.sh
 # Start the server
 printf "🚀 Starting KasmVNC server...\n"
 vncserver -select-de "${DESKTOP_ENVIRONMENT}" -disableBasicAuth > /tmp/kasmvncserver.log 2>&1 &
