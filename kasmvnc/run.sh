@@ -114,7 +114,7 @@ fi
 
 # shellcheck disable=SC1091
 source /etc/os-release
-KASM_VERSION="1.3.2
+KASM_VERSION="1.3.2"
 distro="$ID"
 distro_version="$VERSION_ID"
 codename="$VERSION_CODENAME"
