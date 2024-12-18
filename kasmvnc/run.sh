@@ -34,10 +34,11 @@ download_file() {
   fi
 
   # shellcheck disable=SC2288
-  "$${download_tool[@]}" "$url" > "$output" || {
+  "${download_tool[@]}" "$url" > "$output" || {
     echo "ERROR: Failed to download $url"
     exit 1
   }
+
 }
 
 # Function to install kasmvncserver for debian-based distros
